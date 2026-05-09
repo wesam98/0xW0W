@@ -1,6 +1,6 @@
 ---
 title: "VulnWebView - AllSafe"
-date: 2026-05-09
+date: 2026-05-08
 categories: [android, allsafe]
 tags: [webview, jadx, adb]
 ---
