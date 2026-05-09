@@ -24,7 +24,7 @@ tags: [webview, jadx, adb]
 - Found 2 exported WebView activities. Focused on `RegistrationWebView` first.
 - Opened `RegistrationWebView` in JADX and went to `onCreate()` → `loadWebView()`:
     
-    ![image.png](attachment:62341295-9b31-46a1-b054-cf51c5d017f7:image.png)
+    <img width="1390" height="530" alt="Image" src="https://github.com/user-attachments/assets/a8a0fa52-5df1-40d7-ba41-22d74658fd47" />
     
 - **3 critical findings:**
     
@@ -66,9 +66,8 @@ tags: [webview, jadx, adb]
     
 - **Result:** we got the response, just decode it.
     
-    ![image.png](attachment:c2260c2e-5893-4c24-912f-f86d005e5228:image.png)
-    
-    ![image.png](attachment:4ac95bf0-8946-4aaa-a702-5a6b7d8dfba4:ebe306ca-81c4-4e03-a6e9-1e03e6a53dc9.png)
+    <img width="1919" height="864" alt="Image" src="https://github.com/user-attachments/assets/7c9bab45-4b40-4293-af07-788852e3f1f1" />      
+  <img width="540" height="126" alt="Image" src="https://github.com/user-attachments/assets/dca8d418-f1f2-411f-af4f-0e9cbd1da25a" />
     
 
 #### `SupportWebView`
@@ -83,8 +82,7 @@ tags: [webview, jadx, adb]
     
 - analyzing the `SupportWebView` class in JADX, I examined the `loadWebView()` method and found several alarming configurations:
     
-    ![image.png](attachment:fd3332ec-c176-4c56-9984-85d833bb91a7:image.png)
-    
+<img width="1400" height="537" alt="Image" src="https://github.com/user-attachments/assets/ca875e17-5f7a-4b34-a04f-eb38f60b2409" />    
     - **Arbitrary URL Loading:** The WebView loads whatever URL is provided in the `support_url` intent extra, giving an attacker full control over the displayed content.
     - **`setJavaScriptEnabled(true)`:** JavaScript execution is allowed.
     - **Insecure `JavascriptInterface`:** This grants any JavaScript executing in the WebView direct access to call the exposed Java methods of the `WebAppInterface` class.
@@ -129,8 +127,7 @@ tags: [webview, jadx, adb]
       --es "support_url" "file:///sdcard/test.html"**
     ```
     
-    ![image.png](attachment:c703d9ac-d349-492f-9754-07ea6c3ced44:image.png)
-    
+<img width="547" height="331" alt="Image" src="https://github.com/user-attachments/assets/eaa303d8-b5e5-451d-9530-e24237f80e41" />    
 
 ### Another Vulnerability may arise in webView
 
@@ -143,7 +140,7 @@ tags: [webview, jadx, adb]
 
 #### How to Access It
 
-![image.png](attachment:faa8f257-ab5e-400c-9d76-3713cbb4bec6:image.png)
+<img width="890" height="584" alt="Image" src="https://github.com/user-attachments/assets/97a89a04-6ec5-447d-a1b5-c0833bb02089" />
 
 - Open Chrome → go to `chrome://inspect/#devices`
 - You'll see the device and WebView listed → click **inspect**
