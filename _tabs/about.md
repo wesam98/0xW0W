@@ -1,10 +1,1 @@
----
-layout: page
-title: About
-icon: fas fa-user-circle
-order: 4
-permalink: /about/
----
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
