@@ -1,29 +1,21 @@
 # The Site Configuration
-
 # Import the theme
 theme: jekyll-theme-chirpy
-
 lang: en
-
 timezone: Africa/Cairo
 baseurl: ""
-
 title: 0xW0W
 tagline: Documenting my pentest journey
 description: Android security, CTFs, and pentest writeups.
-
 url: "https://wesam98.github.io"
-
 github:
   username: wesam98
-
 social:
   name: Wesam Abdelaziz
   email: wesamabdelaziz009@gmail.com
   links:
     - https://github.com/wesam98
     - https://www.linkedin.com/in/wesam-abd-el-aziz-224b3a245/
-
 webmaster_verifications:
   google:
   bing:
@@ -31,7 +23,6 @@ webmaster_verifications:
   yandex:
   baidu:
   facebook:
-
 analytics:
   google:
     id:
@@ -47,21 +38,14 @@ analytics:
     id:
   fathom:
     id:
-
 pageviews:
   provider:
-
 theme_mode: dark
-
 cdn:
-
 avatar: assets/download (10).jpg
-
 social_preview_image:
-
 toc: true
 future: true
-
 comments:
   provider:
   disqus:
@@ -79,26 +63,20 @@ comments:
     input_position:
     lang:
     reactions_enabled:
-
 assets:
   self_host:
     enabled:
     env:
-
 pwa:
   enabled: true
   cache:
-  enabled: true
-
+    enabled: true
+plugins:
+  - jekyll-archives
 collections:
   tabs:
     output: true
     sort_by: order
-
-    
- plugins:
-  - jekyll-archives
-
 defaults:
   - scope:
       path: ""
@@ -113,7 +91,6 @@ defaults:
       layout: post
       comments: false
       math: false
-
 jekyll-archives:
   enabled: [categories, tags]
   layouts:
