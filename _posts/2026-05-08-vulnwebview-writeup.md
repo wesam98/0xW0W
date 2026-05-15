@@ -1,10 +1,11 @@
 ---
+layout: post
 title: "VulnWebView - AllSafe"
 date: 2026-05-08 00:00:00 +0200
-categories: [android, allsafe]
+categories: [Android, Allsafe]
 tags: [webview, jadx, adb]
-published: true
 ---
+
 ### Objective
 
 - Exploit a misconfigured exported WebView activity to read sensitive local files from the app without a rooted device.
