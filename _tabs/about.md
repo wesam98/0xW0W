@@ -1,6 +1,7 @@
 ---
-# the default layout is 'page'
-icon: fas fa-info-circle
+layout: page
+title: About
+icon: fas fa-user-circle
 order: 4
 permalink: /about/
 ---
